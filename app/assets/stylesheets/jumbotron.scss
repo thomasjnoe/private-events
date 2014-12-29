@@ -1,0 +1,71 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Universal */
+
+body {
+	padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* Navbar */
+
+.navbar {
+	margin-bottom:0;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.20);
+	border-radius: 0;
+	background-color: #fff;
+	border:0;
+	.navbar-brand {
+		text-transform: uppercase;
+	}
+}
+
+.navbar-nav > li > a:hover {
+	background-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #97B8C5;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	padding: 30px;
+	background-color: #CBF1FF;
+	text-align:center;
+}
+
+/* Event Styles */
+
+.events {
+	a {
+		p {
+			color: #000;
+		}
+		&:hover {
+			text-decoration:none;
+		}
+	}
+}
+
+.event-card {
+	padding: 5px 5px 5px 0;
+	&:hover {
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+	}
+	&:last-of-type {
+		margin-bottom: 10px;
+	}
+	.event-name {
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	.event-host {
+		color: #999;
+	}
+	p {
+		margin-bottom:3px;
+	}
+}
