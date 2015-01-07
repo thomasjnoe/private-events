@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'events/new'
+
+  get 'events/create'
+
+  get 'events/show'
+
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
