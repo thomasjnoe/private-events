@@ -1,0 +1,6 @@
+<h1>Events</h1>
+<div class="events">
+<% @events.each do |event| %>
+	<%= render 'shared/event_card', object: event %>
+<% end %>
+</div>
