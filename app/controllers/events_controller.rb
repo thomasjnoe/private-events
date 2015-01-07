@@ -18,6 +18,10 @@ class EventsController < ApplicationController
   	@user = User.find_by(id: @event.creator_id)
   end
 
+  def index
+  	@events = Event.all
+  end
+
   private
 
   	def event_params
