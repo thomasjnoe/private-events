@@ -15,7 +15,6 @@ class EventsController < ApplicationController
 
   def show
   	@event = Event.find(params[:id])
-  	@user = User.find_by(id: @event.creator_id)
   end
 
   def index
