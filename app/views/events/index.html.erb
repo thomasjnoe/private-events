@@ -1,6 +1,17 @@
-<h1>Events</h1>
-<div class="events">
-<% @events.each do |event| %>
-	<%= render 'shared/event_card', object: event %>
-<% end %>
+<h1>Event Index</h1>
+
+<div class="row">
+	<div class="col-sm-6 events">
+		<h2>Upcoming Events</h2>
+		<% @upcoming_events.each do |event| %>
+			<%= render 'shared/event_card', object: event %>
+		<% end %>
+	</div>
+
+	<div class="col-sm-6 events">
+		<h2>Past Events</h2>
+		<% @past_events.each do |event| %>
+			<%= render 'shared/event_card', object: event %>
+		<% end %>
+	</div>
 </div>
