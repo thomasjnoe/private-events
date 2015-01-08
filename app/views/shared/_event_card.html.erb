@@ -5,6 +5,6 @@
 	  <p><%= object.description %>
 	  <p>Date: <%= object.date.strftime('%A, %B %d, %Y') %></p>
 	  <p>Location: <%= object.location %></p>
-	  <p>Attendees: #</p>
+	  <p>Attendees: <%= object.attendees.count %></p>
 	</div>
 <% end %>
