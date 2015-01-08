@@ -1,7 +1,7 @@
 <%= link_to object do %>	
 	<div class="event-card">
 	  <h3 class="event-name"><%= object.title %></h3>
-	  <p class="event-host">Hosted by: <%= object.creator.name %></p>
+	  <p class="event-host">Created by: <%= object.creator.name %></p>
 	  <p><%= object.description %>
 	  <p>Date: <%= object.date.strftime('%A, %B %d, %Y') %></p>
 	  <p>Location: <%= object.location %></p>
