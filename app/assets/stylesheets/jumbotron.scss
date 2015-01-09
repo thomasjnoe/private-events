@@ -29,6 +29,16 @@ body {
 	background-color: #fff;
 }
 
+.navbar-nav > li > .btn-primary {
+	padding: 9px 12px;
+	margin-top: 5px;
+}
+
+.navbar-nav > li > .btn-primary:hover {
+	background-color: #3276b1;
+  border-color: #285e8e;
+}
+
 .navbar-toggle .icon-bar {
 	background-color: #97B8C5;
 }
