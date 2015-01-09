@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   	if @user.save
   		flash[:success] = "Thank you for signing up!  Welcome to Private Events!"
   		log_in @user
-  		redirect_to @user
+  		redirect_back_or @user
   	else
   		render 'new'
   	end
