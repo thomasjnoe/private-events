@@ -14,6 +14,15 @@ module SessionsHelper
 		end
 	end
 
+	def store_forwarding_url
+		session[:forwarding_url] = request.url if request.get?
+	end
+
+	def redirect_back_or(default)
+		redirect_to(session[:forwarding_url] || default)
+		session.delete(:forwarding_url)
+	end
+
 	def log_out
 		session.delete(:user_id)
 		redirect_to root_path
